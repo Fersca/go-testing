@@ -21,6 +21,8 @@ func TestAdd(t *testing.T) {
 		t.Fatalf("%d + %d Should be equals to %d", a, b, expected)
 	}
 
+	sleep()
+
 	println("TestAdd OK")
 }
 
@@ -38,6 +40,8 @@ func TestSubtract(t *testing.T) {
 	if result != expected {
 		t.Fatalf("%d - %d Should be equals to %d", a, b, expected)
 	}
+
+	sleep()
 
 	println("TestSubtract OK")
 }
@@ -57,6 +61,8 @@ func TestMultiply(t *testing.T) {
 		t.Fatalf("%d * %d Should be equals to %d", a, b, expected)
 	}
 
+	sleep()
+
 	println("TestMultiply OK")
 }
 
@@ -74,6 +80,8 @@ func TestDivide(t *testing.T) {
 	if result != expected {
 		t.Fatalf("%d / %d Should be equals to %d", a, b, expected)
 	}
+
+	sleep()
 
 	println("TestDivide OK")
 }
